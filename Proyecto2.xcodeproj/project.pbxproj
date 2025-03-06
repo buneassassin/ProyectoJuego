@@ -13,6 +13,14 @@
 		E3A17CF12D72C34800E0BC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A17CEF2D72C34800E0BC88 /* Main.storyboard */; };
 		E3A17CF32D72C34D00E0BC88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */; };
 		E3A17CF62D72C34D00E0BC88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A17CF42D72C34D00E0BC88 /* LaunchScreen.storyboard */; };
+		E3A17D502D79F39A00E0BC88 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D482D79F39A00E0BC88 /* 1.jpeg */; };
+		E3A17D512D79F39A00E0BC88 /* imagen1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D492D79F39A00E0BC88 /* imagen1.jpeg */; };
+		E3A17D522D79F39A00E0BC88 /* bandera.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D4A2D79F39A00E0BC88 /* bandera.jpeg */; };
+		E3A17D532D79F39A00E0BC88 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D4B2D79F39A00E0BC88 /* 2.jpeg */; };
+		E3A17D542D79F39A00E0BC88 /* icono.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D4C2D79F39A00E0BC88 /* icono.jpeg */; };
+		E3A17D552D79F39A00E0BC88 /* bomba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D4D2D79F39A00E0BC88 /* bomba.jpg */; };
+		E3A17D562D79F39A00E0BC88 /* UTT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D4E2D79F39A00E0BC88 /* UTT.jpeg */; };
+		E3A17D572D79F39A00E0BC88 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D4F2D79F39A00E0BC88 /* 3.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A17CF52D72C34D00E0BC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A17CF72D72C34E00E0BC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A17D482D79F39A00E0BC88 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		E3A17D492D79F39A00E0BC88 /* imagen1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imagen1.jpeg; sourceTree = "<group>"; };
+		E3A17D4A2D79F39A00E0BC88 /* bandera.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bandera.jpeg; sourceTree = "<group>"; };
+		E3A17D4B2D79F39A00E0BC88 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		E3A17D4C2D79F39A00E0BC88 /* icono.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icono.jpeg; sourceTree = "<group>"; };
+		E3A17D4D2D79F39A00E0BC88 /* bomba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bomba.jpg; sourceTree = "<group>"; };
+		E3A17D4E2D79F39A00E0BC88 /* UTT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UTT.jpeg; sourceTree = "<group>"; };
+		E3A17D4F2D79F39A00E0BC88 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +77,27 @@
 				E3A17CED2D72C34800E0BC88 /* ViewController.swift */,
 				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
 				E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */,
+				E3A17D472D79F39A00E0BC88 /* BuscaMinasImg */,
 				E3A17CF42D72C34D00E0BC88 /* LaunchScreen.storyboard */,
 				E3A17CF72D72C34E00E0BC88 /* Info.plist */,
 			);
 			path = Proyecto2;
+			sourceTree = "<group>";
+		};
+		E3A17D472D79F39A00E0BC88 /* BuscaMinasImg */ = {
+			isa = PBXGroup;
+			children = (
+				E3A17D482D79F39A00E0BC88 /* 1.jpeg */,
+				E3A17D492D79F39A00E0BC88 /* imagen1.jpeg */,
+				E3A17D4A2D79F39A00E0BC88 /* bandera.jpeg */,
+				E3A17D4B2D79F39A00E0BC88 /* 2.jpeg */,
+				E3A17D4C2D79F39A00E0BC88 /* icono.jpeg */,
+				E3A17D4D2D79F39A00E0BC88 /* bomba.jpg */,
+				E3A17D4E2D79F39A00E0BC88 /* UTT.jpeg */,
+				E3A17D4F2D79F39A00E0BC88 /* 3.jpeg */,
+			);
+			name = BuscaMinasImg;
+			path = ../../../../Downloads/BuscaMinasImg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +159,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3A17CF62D72C34D00E0BC88 /* LaunchScreen.storyboard in Resources */,
+				E3A17D562D79F39A00E0BC88 /* UTT.jpeg in Resources */,
+				E3A17D512D79F39A00E0BC88 /* imagen1.jpeg in Resources */,
+				E3A17D552D79F39A00E0BC88 /* bomba.jpg in Resources */,
 				E3A17CF32D72C34D00E0BC88 /* Assets.xcassets in Resources */,
 				E3A17CF12D72C34800E0BC88 /* Main.storyboard in Resources */,
+				E3A17D502D79F39A00E0BC88 /* 1.jpeg in Resources */,
+				E3A17D522D79F39A00E0BC88 /* bandera.jpeg in Resources */,
+				E3A17D542D79F39A00E0BC88 /* icono.jpeg in Resources */,
+				E3A17D572D79F39A00E0BC88 /* 3.jpeg in Resources */,
+				E3A17D532D79F39A00E0BC88 /* 2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +335,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +347,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +363,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +375,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
