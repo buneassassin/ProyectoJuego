@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A1086142D7A0A4500D2AE2A /* MinasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1086132D7A0A4500D2AE2A /* MinasCollectionViewController.swift */; };
 		E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */; };
 		E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */; };
 		E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CED2D72C34800E0BC88 /* ViewController.swift */; };
@@ -21,10 +22,10 @@
 		E3A17D772D79F54B00E0BC88 /* bomba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D6F2D79F54B00E0BC88 /* bomba.jpg */; };
 		E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D702D79F54B00E0BC88 /* UTT.jpeg */; };
 		E3A17D792D79F54B00E0BC88 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D712D79F54B00E0BC88 /* 3.jpeg */; };
-		E3A17D7D2D79F79500E0BC88 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A1086132D7A0A4500D2AE2A /* MinasCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinasCollectionViewController.swift; sourceTree = "<group>"; };
 		E3A17CE62D72C34800E0BC88 /* Proyecto2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,8 +42,11 @@
 		E3A17D6F2D79F54B00E0BC88 /* bomba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bomba.jpg; sourceTree = "<group>"; };
 		E3A17D702D79F54B00E0BC88 /* UTT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UTT.jpeg; sourceTree = "<group>"; };
 		E3A17D712D79F54B00E0BC88 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
-		E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7A1086162D7A0B6C00D2AE2A /* Cell */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Cell; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E3A17CE32D72C34800E0BC88 /* Frameworks */ = {
@@ -75,11 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */,
+				7A1086162D7A0B6C00D2AE2A /* Cell */,
 				E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */,
 				E3A17CED2D72C34800E0BC88 /* ViewController.swift */,
-				E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */,
-				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
 				E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */,
+				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
+				7A1086132D7A0A4500D2AE2A /* MinasCollectionViewController.swift */,
 				E3A17CF42D72C34D00E0BC88 /* LaunchScreen.storyboard */,
 				E3A17D692D79F54B00E0BC88 /* BuscaMinasImg */,
 				E3A17CF72D72C34E00E0BC88 /* Info.plist */,
@@ -116,6 +121,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7A1086162D7A0B6C00D2AE2A /* Cell */,
 			);
 			name = Proyecto2;
 			productName = Proyecto2;
@@ -183,8 +191,8 @@
 			files = (
 				E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */,
 				E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */,
+				7A1086142D7A0A4500D2AE2A /* MinasCollectionViewController.swift in Sources */,
 				E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */,
-				E3A17D7D2D79F79500E0BC88 /* CellCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
