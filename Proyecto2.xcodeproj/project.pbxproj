@@ -22,7 +22,6 @@
 		E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D702D79F54B00E0BC88 /* UTT.jpeg */; };
 		E3A17D792D79F54B00E0BC88 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D712D79F54B00E0BC88 /* 3.jpeg */; };
 		E3A17D7D2D79F79500E0BC88 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */; };
-		E3A17D7F2D79F7DC00E0BC88 /* MinesweeperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17D7E2D79F7DC00E0BC88 /* MinesweeperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		E3A17D702D79F54B00E0BC88 /* UTT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UTT.jpeg; sourceTree = "<group>"; };
 		E3A17D712D79F54B00E0BC88 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 		E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
-		E3A17D7E2D79F7DC00E0BC88 /* MinesweeperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweeperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 				E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */,
 				E3A17CED2D72C34800E0BC88 /* ViewController.swift */,
 				E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */,
-				E3A17D7E2D79F7DC00E0BC88 /* MinesweeperViewController.swift */,
 				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
 				E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */,
 				E3A17CF42D72C34D00E0BC88 /* LaunchScreen.storyboard */,
@@ -186,7 +183,6 @@
 			files = (
 				E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */,
 				E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */,
-				E3A17D7F2D79F7DC00E0BC88 /* MinesweeperViewController.swift in Sources */,
 				E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */,
 				E3A17D7D2D79F79500E0BC88 /* CellCollectionViewCell.swift in Sources */,
 			);
