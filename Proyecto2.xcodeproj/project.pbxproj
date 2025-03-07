@@ -26,6 +26,7 @@
 		E3A17D842D7A31ED00E0BC88 /* MinasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17D822D7A31ED00E0BC88 /* MinasCollectionViewCell.swift */; };
 		E3A17D862D7A334300E0BC88 /* fondo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D852D7A334300E0BC88 /* fondo.jpeg */; };
 		E3A17D8C2D7A79E900E0BC88 /* titulo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D8B2D7A79E900E0BC88 /* titulo.jpeg */; };
+		E3A17D8E2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D8D2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E3A17D822D7A31ED00E0BC88 /* MinasCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinasCollectionViewCell.swift; sourceTree = "<group>"; };
 		E3A17D852D7A334300E0BC88 /* fondo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpeg; sourceTree = "<group>"; };
 		E3A17D8B2D7A79E900E0BC88 /* titulo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = titulo.jpeg; sourceTree = "<group>"; };
+		E3A17D8D2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cool Text - Responsables 477650993489581.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		E3A17D692D79F54B00E0BC88 /* BuscaMinasImg */ = {
 			isa = PBXGroup;
 			children = (
+				E3A17D8D2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png */,
 				E3A17D8B2D7A79E900E0BC88 /* titulo.jpeg */,
 				E3A17D852D7A334300E0BC88 /* fondo.jpeg */,
 				E3A17D6A2D79F54B00E0BC88 /* 1.jpeg */,
@@ -182,6 +185,7 @@
 			files = (
 				E3A17CF62D72C34D00E0BC88 /* LaunchScreen.storyboard in Resources */,
 				E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */,
+				E3A17D8E2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png in Resources */,
 				E3A17D732D79F54B00E0BC88 /* imagen1.jpeg in Resources */,
 				E3A17D772D79F54B00E0BC88 /* bomba.jpg in Resources */,
 				E3A17D862D7A334300E0BC88 /* fondo.jpeg in Resources */,
