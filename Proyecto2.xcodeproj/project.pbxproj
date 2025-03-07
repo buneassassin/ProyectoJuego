@@ -22,6 +22,10 @@
 		E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D702D79F54B00E0BC88 /* UTT.jpeg */; };
 		E3A17D792D79F54B00E0BC88 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D712D79F54B00E0BC88 /* 3.jpeg */; };
 		E3A17D7D2D79F79500E0BC88 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */; };
+		E3A17D832D7A31ED00E0BC88 /* MinasCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D812D7A31ED00E0BC88 /* MinasCollectionViewCell.xib */; };
+		E3A17D842D7A31ED00E0BC88 /* MinasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17D822D7A31ED00E0BC88 /* MinasCollectionViewCell.swift */; };
+		E3A17D862D7A334300E0BC88 /* fondo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D852D7A334300E0BC88 /* fondo.jpeg */; };
+		E3A17D8C2D7A79E900E0BC88 /* titulo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D8B2D7A79E900E0BC88 /* titulo.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		E3A17D702D79F54B00E0BC88 /* UTT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UTT.jpeg; sourceTree = "<group>"; };
 		E3A17D712D79F54B00E0BC88 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 		E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
+		E3A17D812D7A31ED00E0BC88 /* MinasCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinasCollectionViewCell.xib; sourceTree = "<group>"; };
+		E3A17D822D7A31ED00E0BC88 /* MinasCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinasCollectionViewCell.swift; sourceTree = "<group>"; };
+		E3A17D852D7A334300E0BC88 /* fondo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpeg; sourceTree = "<group>"; };
+		E3A17D8B2D7A79E900E0BC88 /* titulo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = titulo.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 				E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */,
 				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
 				E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */,
+				E3A17D802D7A31ED00E0BC88 /* Cell */,
 				E3A17CF42D72C34D00E0BC88 /* LaunchScreen.storyboard */,
 				E3A17D692D79F54B00E0BC88 /* BuscaMinasImg */,
 				E3A17CF72D72C34E00E0BC88 /* Info.plist */,
@@ -90,6 +99,8 @@
 		E3A17D692D79F54B00E0BC88 /* BuscaMinasImg */ = {
 			isa = PBXGroup;
 			children = (
+				E3A17D8B2D7A79E900E0BC88 /* titulo.jpeg */,
+				E3A17D852D7A334300E0BC88 /* fondo.jpeg */,
 				E3A17D6A2D79F54B00E0BC88 /* 1.jpeg */,
 				E3A17D6B2D79F54B00E0BC88 /* imagen1.jpeg */,
 				E3A17D6C2D79F54B00E0BC88 /* bandera.jpeg */,
@@ -100,6 +111,15 @@
 				E3A17D712D79F54B00E0BC88 /* 3.jpeg */,
 			);
 			path = BuscaMinasImg;
+			sourceTree = "<group>";
+		};
+		E3A17D802D7A31ED00E0BC88 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E3A17D812D7A31ED00E0BC88 /* MinasCollectionViewCell.xib */,
+				E3A17D822D7A31ED00E0BC88 /* MinasCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,10 +184,13 @@
 				E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */,
 				E3A17D732D79F54B00E0BC88 /* imagen1.jpeg in Resources */,
 				E3A17D772D79F54B00E0BC88 /* bomba.jpg in Resources */,
+				E3A17D862D7A334300E0BC88 /* fondo.jpeg in Resources */,
 				E3A17CF32D72C34D00E0BC88 /* Assets.xcassets in Resources */,
 				E3A17CF12D72C34800E0BC88 /* Main.storyboard in Resources */,
 				E3A17D722D79F54B00E0BC88 /* 1.jpeg in Resources */,
+				E3A17D832D7A31ED00E0BC88 /* MinasCollectionViewCell.xib in Resources */,
 				E3A17D742D79F54B00E0BC88 /* bandera.jpeg in Resources */,
+				E3A17D8C2D7A79E900E0BC88 /* titulo.jpeg in Resources */,
 				E3A17D762D79F54B00E0BC88 /* icono.jpeg in Resources */,
 				E3A17D792D79F54B00E0BC88 /* 3.jpeg in Resources */,
 				E3A17D752D79F54B00E0BC88 /* 2.jpeg in Resources */,
@@ -181,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A17D842D7A31ED00E0BC88 /* MinasCollectionViewCell.swift in Sources */,
 				E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */,
 				E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */,
 				E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */,
