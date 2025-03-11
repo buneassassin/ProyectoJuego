@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K3j-OH-t5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Proyecto2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="Proyecto2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,12 +26,13 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <segue destination="K3j-OH-t5n" kind="presentation" identifier="prsSplach" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="quA-hn-r5K"/>
+                        <outlet property="imvSplach" destination="4U6-co-2Nk" id="quL-eq-p9r"/>
+                        <segue destination="K3j-OH-t5n" kind="presentation" identifier="sgSplash" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="quA-hn-r5K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-116" y="61"/>
+            <point key="canvasLocation" x="-116.35514018691588" y="60.90712742980562"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pz5-NH-2GQ">
@@ -42,7 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyB-BD-jtV">
-                                <rect key="frame" x="30" y="349" width="368" height="42"/>
+                                <rect key="frame" x="30" y="337" width="368" height="42"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -73,7 +74,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jAw-xt-pc9">
-                                <rect key="frame" x="30" y="421" width="368" height="43"/>
+                                <rect key="frame" x="30" y="409" width="368" height="43"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="m4y-d5-v0c"/>
@@ -106,7 +107,6 @@
                             <constraint firstItem="kuY-kC-bax" firstAttribute="leading" secondItem="cwj-bW-6qH" secondAttribute="leading" constant="30" id="kqf-uj-lbT"/>
                             <constraint firstItem="hyB-BD-jtV" firstAttribute="top" secondItem="kuY-kC-bax" secondAttribute="bottom" constant="30" id="lQ0-GU-DI5"/>
                             <constraint firstItem="kuY-kC-bax" firstAttribute="centerX" secondItem="5aL-2p-YOe" secondAttribute="centerX" id="pr1-to-fgg"/>
-                            <constraint firstItem="hyB-BD-jtV" firstAttribute="top" secondItem="kuY-kC-bax" secondAttribute="bottom" constant="42" id="qpk-ff-yNz"/>
                             <constraint firstItem="hyB-BD-jtV" firstAttribute="trailing" secondItem="kuY-kC-bax" secondAttribute="trailing" id="rLw-re-KMU"/>
                         </constraints>
                     </view>
@@ -145,8 +145,8 @@
                                     <constraint firstAttribute="height" constant="55" id="k4d-NX-uQ7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dante Raziel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFf-gh-aAa">
-                                <rect key="frame" x="20" y="161" width="388" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dante Raziel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFf-gh-aAa">
+                                <rect key="frame" x="20" y="161" width="388" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zeq-7l-wjN"/>
                                 </constraints>
@@ -154,8 +154,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Totilotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rI0-mg-VgC">
-                                <rect key="frame" x="20" y="226" width="388" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Totilotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rI0-mg-VgC">
+                                <rect key="frame" x="20" y="226" width="388" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aXG-Ej-CaQ"/>
                                 </constraints>
@@ -175,11 +175,13 @@
                         <constraints>
                             <constraint firstItem="rI0-mg-VgC" firstAttribute="centerX" secondItem="87b-zt-iok" secondAttribute="centerX" id="3Sd-iT-sMW"/>
                             <constraint firstItem="olf-ZY-auM" firstAttribute="leading" secondItem="CQ6-B3-FZk" secondAttribute="leading" id="8bZ-vx-745"/>
+                            <constraint firstItem="LFf-gh-aAa" firstAttribute="top" secondItem="BoO-fS-3TD" secondAttribute="bottom" constant="72" id="A76-bB-9N0"/>
                             <constraint firstItem="CQ6-B3-FZk" firstAttribute="trailing" secondItem="LFf-gh-aAa" secondAttribute="trailing" constant="20" id="Ahr-5N-ku6"/>
                             <constraint firstItem="olf-ZY-auM" firstAttribute="centerX" secondItem="87b-zt-iok" secondAttribute="centerX" id="InX-gl-6hA"/>
                             <constraint firstItem="BoO-fS-3TD" firstAttribute="leading" secondItem="CQ6-B3-FZk" secondAttribute="leading" constant="10" id="JJR-nc-QhU"/>
                             <constraint firstItem="BoO-fS-3TD" firstAttribute="centerX" secondItem="87b-zt-iok" secondAttribute="centerX" id="MxD-Fx-BeG"/>
                             <constraint firstItem="LFf-gh-aAa" firstAttribute="leading" secondItem="CQ6-B3-FZk" secondAttribute="leading" constant="20" id="O5l-gq-A2w"/>
+                            <constraint firstItem="rI0-mg-VgC" firstAttribute="top" secondItem="LFf-gh-aAa" secondAttribute="bottom" constant="25" id="QmZ-y1-ey6"/>
                             <constraint firstItem="LFf-gh-aAa" firstAttribute="centerX" secondItem="87b-zt-iok" secondAttribute="centerX" id="eFn-xD-fqy"/>
                             <constraint firstItem="BoO-fS-3TD" firstAttribute="top" secondItem="CQ6-B3-FZk" secondAttribute="top" constant="34" id="gde-xV-9VO"/>
                             <constraint firstItem="CQ6-B3-FZk" firstAttribute="trailing" secondItem="BoO-fS-3TD" secondAttribute="trailing" constant="10" id="i65-kN-YJ1"/>
