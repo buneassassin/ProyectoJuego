@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AF31F512D83D34800DA0A62 /* MinasUICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */; };
 		E34E9BE52D808F01003A9209 /* SplachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E9BE42D808F01003A9209 /* SplachViewController.swift */; };
 		E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */; };
 		E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */; };
@@ -22,7 +23,6 @@
 		E3A17D772D79F54B00E0BC88 /* bomba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D6F2D79F54B00E0BC88 /* bomba.jpg */; };
 		E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D702D79F54B00E0BC88 /* UTT.jpeg */; };
 		E3A17D792D79F54B00E0BC88 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D712D79F54B00E0BC88 /* 3.jpeg */; };
-		E3A17D7D2D79F79500E0BC88 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */; };
 		E3A17D832D7A31ED00E0BC88 /* MinasCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D812D7A31ED00E0BC88 /* MinasCollectionViewCell.xib */; };
 		E3A17D842D7A31ED00E0BC88 /* MinasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17D822D7A31ED00E0BC88 /* MinasCollectionViewCell.swift */; };
 		E3A17D862D7A334300E0BC88 /* fondo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3A17D852D7A334300E0BC88 /* fondo.jpeg */; };
@@ -31,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinasUICollectionViewController.swift; sourceTree = "<group>"; };
 		E34E9BE42D808F01003A9209 /* SplachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplachViewController.swift; sourceTree = "<group>"; };
 		E3A17CE62D72C34800E0BC88 /* Proyecto2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		E3A17D6F2D79F54B00E0BC88 /* bomba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bomba.jpg; sourceTree = "<group>"; };
 		E3A17D702D79F54B00E0BC88 /* UTT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UTT.jpeg; sourceTree = "<group>"; };
 		E3A17D712D79F54B00E0BC88 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
-		E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		E3A17D812D7A31ED00E0BC88 /* MinasCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinasCollectionViewCell.xib; sourceTree = "<group>"; };
 		E3A17D822D7A31ED00E0BC88 /* MinasCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinasCollectionViewCell.swift; sourceTree = "<group>"; };
 		E3A17D852D7A334300E0BC88 /* fondo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpeg; sourceTree = "<group>"; };
@@ -90,8 +90,8 @@
 				E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */,
 				E3A17CED2D72C34800E0BC88 /* ViewController.swift */,
 				E34E9BE42D808F01003A9209 /* SplachViewController.swift */,
-				E3A17D7C2D79F79500E0BC88 /* CellCollectionViewCell.swift */,
 				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
+				7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */,
 				E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */,
 				E3A17D802D7A31ED00E0BC88 /* Cell */,
 				E3A17CF42D72C34D00E0BC88 /* LaunchScreen.storyboard */,
@@ -214,9 +214,9 @@
 				E3A17D842D7A31ED00E0BC88 /* MinasCollectionViewCell.swift in Sources */,
 				E34E9BE52D808F01003A9209 /* SplachViewController.swift in Sources */,
 				E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */,
+				7AF31F512D83D34800DA0A62 /* MinasUICollectionViewController.swift in Sources */,
 				E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */,
 				E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */,
-				E3A17D7D2D79F79500E0BC88 /* CellCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
