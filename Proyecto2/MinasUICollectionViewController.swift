@@ -9,7 +9,7 @@ import UIKit
 
 class MinasUICollectionViewController: UICollectionViewController {
 
-   @IBOutlet var colMinas: UICollectionView!
+   private let items = Array(0...20)
    
    override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,43 +18,37 @@ class MinasUICollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        colMinas.register(UINib(nibName: "MinasUICollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Celda")
+        /*self.collectionView.register(UINib(nibName: "MinasUICollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Celda")*/
+        let nib = UINib(nibName: "MinasCollectionViewCell", bundle: nil)
+              collectionView.register(nib, forCellWithReuseIdentifier: "MinasCell")
 
+      
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+                  layout.itemSize = CGSize(width: 60, height: 60)
+                  layout.minimumInteritemSpacing = 2
+                  layout.minimumLineSpacing = 2
+              }
         // Do any additional setup after loading the view.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 5
-    }
-
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 5
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+           return items.count
+       }
        
-       let cell = colMinas.dequeueReusableCell(withReuseIdentifier: "Celda", for: indexPath) as! MinasCollectionViewCell
-
-    
-        // Configure the cell
-    
-        return cell
-    }
+       override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MinasCell", for: indexPath) as! MinasCollectionViewCell
+           
+           // Configuración básica de la celda
+           
+           
+           return cell
+       }
+       
+       // MARK: - Selección
+       override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+           print("Celda seleccionada: \(indexPath.item)")
+       }
 
     // MARK: UICollectionViewDelegate
 

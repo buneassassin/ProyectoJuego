@@ -68,7 +68,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Kxh-yy-0Em" kind="presentation" id="rYI-cv-l14"/>
+                                    <segue destination="8yJ-h4-q3M" kind="presentation" id="lUD-jP-uXN"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titulo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="y3T-ZM-TNM">
@@ -124,7 +124,7 @@
             <objects>
                 <navigationController id="Kxh-yy-0Em" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HI2-Lf-QUP">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="56"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -220,7 +220,7 @@
             <objects>
                 <collectionViewController id="8yJ-h4-q3M" customClass="MinasUICollectionViewController" customModule="Proyecto2" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="zxo-ma-eBM">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PUr-A3-rec">
@@ -237,6 +237,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionViewCellContentView>
+                                <color key="backgroundColor" red="0.91372549530000002" green="0.20000001789999999" blue="0.13725490870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -244,15 +245,15 @@
                             <outlet property="delegate" destination="8yJ-h4-q3M" id="3xw-lo-6cO"/>
                         </connections>
                     </collectionView>
-                    <connections>
-                        <outlet property="colMinas" destination="zxo-ma-eBM" id="17p-zC-qaz"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awq-yy-evi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2420" y="11"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lUD-jP-uXN"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Cool Text - Responsables 477650993489581.png" width="832" height="92"/>
         <image name="UTT.jpeg" width="372" height="135"/>
