@@ -9,7 +9,7 @@ import UIKit
 
 class MinasUICollectionViewController: UICollectionViewController {
 
-   private let items = Array(0...20)
+   private let items = Array(0...100)
    
    override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class MinasUICollectionViewController: UICollectionViewController {
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
                   layout.itemSize = CGSize(width: 60, height: 60)
                   layout.minimumInteritemSpacing = 2
-                  layout.minimumLineSpacing = 2
+                  layout.minimumLineSpacing = 1
               }
         // Do any additional setup after loading the view.
     }
