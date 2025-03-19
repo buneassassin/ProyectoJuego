@@ -81,7 +81,7 @@ class MinasUICollectionViewController: UICollectionViewController {
    }
    
    private func updateTimeLabel() {
-       tiempoTranscurrido.text = "Tiempo: \(elapsedSeconds) segundos"
+      tiempoTranscurrido.text = "Tiempo: \(formattedTime(seconds: elapsedSeconds))"
    }
    
    
@@ -112,7 +112,7 @@ class MinasUICollectionViewController: UICollectionViewController {
        collectionView.reloadData()
 
        // Mensaje con tiempo transcurrido
-       let message = "Has pisado una mina. Tiempo: \(elapsedSeconds) segundos."
+      let message = "Has pisado una mina. Tiempo: \(formattedTime(seconds: elapsedSeconds))"
        let alert = UIAlertController(title: "¡Game Over!", message: message, preferredStyle: .alert)
        alert.addAction(UIAlertAction(title: "Reiniciar", style: .default, handler: { _ in
            self.restartGame()
@@ -123,7 +123,7 @@ class MinasUICollectionViewController: UICollectionViewController {
    private func showVictory() {
        timer?.invalidate() // Detener temporizador
        
-       let message = "¡Felicidades! Tiempo: \(elapsedSeconds) segundos."
+      let message = "¡Felicidades! Tiempo: \(formattedTime(seconds: elapsedSeconds))"
        let alert = UIAlertController(title: "¡Ganaste!", message: message, preferredStyle: .alert)
        alert.addAction(UIAlertAction(title: "Reiniciar", style: .default, handler: { _ in
            self.restartGame()
@@ -136,6 +136,13 @@ class MinasUICollectionViewController: UICollectionViewController {
        gameBoard.printBoard()
        collectionView.reloadData()
        startTimer() // Reiniciar temporizador al reiniciar juego
+   }
+   
+   
+   private func formattedTime(seconds: Int) -> String {
+       let minutes = (seconds / 60) % 60
+       let seconds = seconds % 60
+       return String(format: "%02d:%02d", minutes, seconds)
    }
    
     @IBAction func reiniciarJuego(_ sender: UIButton) {
