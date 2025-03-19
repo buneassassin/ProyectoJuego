@@ -1,4 +1,5 @@
 import UIKit
+
 // Definimos la estructura Cell para cada casilla
 struct Cell {
     var isMine: Bool = false
@@ -6,6 +7,7 @@ struct Cell {
     var isFlagged: Bool = false
     var adjacentMines: Int = 0
 }
+
 class GameBoard: NSObject {
     // Propiedades del tablero
     var cells: [[Cell]]
@@ -19,7 +21,7 @@ class GameBoard: NSObject {
         self.columns = columns
         self.numberOfMines = numberOfMines
         self.cells = Array(repeating: Array(repeating: Cell(), count: columns), count: rows)
-        super.init()  // Llamar al inicializador de NSObject
+        super.init()
         setupBoard()
     }
     
@@ -53,34 +55,70 @@ class GameBoard: NSObject {
     }
     
     // Método para revelar celdas de forma recursiva
-    func revealCell(atRow row: Int, column col: Int) {
+    func revealCell(atRow row: Int, column col: Int, isDirectClick: Bool = false) {
         guard row >= 0, row < rows, col >= 0, col < columns else { return }
-        if cells[row][col].isRevealed { return }
-        cells[row][col].isRevealed = true
+        if cells[row][col].isRevealed || cells[row][col].isFlagged { return }
+        
+        if isDirectClick {
+            cells[row][col].isRevealed = true
+        } else {
+            if cells[row][col].isMine { return }
+            cells[row][col].isRevealed = true
+        }
         
         if cells[row][col].adjacentMines == 0 && !cells[row][col].isMine {
             for i in max(row - 1, 0)...min(row + 1, rows - 1) {
                 for j in max(col - 1, 0)...min(col + 1, columns - 1) {
+                    if i == row && j == col { continue }
                     revealCell(atRow: i, column: j)
                 }
             }
         }
     }
-    func printBoard() {
-        print(" ")
-        for row in cells {
-            var rowText = ""
-            for cell in row {
-                if cell.isMine {
-                    rowText += "* "
-                } else if cell.adjacentMines > 0 {
-                    rowText += "\(cell.adjacentMines) "
-                } else {
-                    rowText += "░ "
-                }
-            }
-            print(rowText)
+    
+    // Alternar bandera en una celda
+    func toggleFlag(atRow row: Int, column col: Int) {
+        guard row >= 0, row < rows, col >= 0, col < columns else { return }
+        if !cells[row][col].isRevealed {
+            cells[row][col].isFlagged.toggle()
         }
     }
-
+    
+    // Imprime el tablero mostrando minas, números, banderas y celdas ocultas
+    func printBoard() {
+        print("\nTablero:")
+       for row in cells {
+           var rowText = ""
+           for cell in row {
+               if cell.isMine {
+                   rowText += "* "
+               } else if cell.adjacentMines > 0 {
+                   rowText += "\(cell.adjacentMines) "
+               } else {
+                   rowText += "░ "
+               }
+           }
+           print(rowText)
+       }
+    }
 }
+
+
+/*
+ func printBoard() {
+     print(" ")
+     for row in cells {
+         var rowText = ""
+         for cell in row {
+             if cell.isMine {
+                 rowText += "* "
+             } else if cell.adjacentMines > 0 {
+                 rowText += "\(cell.adjacentMines) "
+             } else {
+                 rowText += "░ "
+             }
+         }
+         print(rowText)
+     }
+ }
+ */
