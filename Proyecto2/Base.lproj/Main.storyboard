@@ -68,7 +68,11 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+<<<<<<< HEAD
                                     <segue destination="8yJ-h4-q3M" kind="presentation" modalPresentationStyle="fullScreen" id="C3D-KL-l1Q"/>
+=======
+                                    <segue destination="Kxh-yy-0Em" kind="presentation" id="rYI-cv-l14"/>
+>>>>>>> parent of 33fc88b (Merge pull request #5 from buneassassin/origin/China)
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titulo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="y3T-ZM-TNM">
@@ -117,7 +121,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="up5-6P-oqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="1127" y="90"/>
+=======
+            <point key="canvasLocation" x="824.63768115942037" y="60.9375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uIp-fk-Kli">
+            <objects>
+                <navigationController id="Kxh-yy-0Em" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HI2-Lf-QUP">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8yJ-h4-q3M" kind="presentation" modalPresentationStyle="fullScreen" id="uLJ-oQ-myh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDc-m7-Npc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="11"/>
+>>>>>>> parent of 33fc88b (Merge pull request #5 from buneassassin/origin/China)
         </scene>
         <!--View Controller-->
         <scene sceneID="6pR-D7-YLi">
@@ -238,6 +262,7 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+<<<<<<< HEAD
                         <view key="backgroundView" contentMode="scaleToFill" id="Y30-A3-R0w">
                             <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -295,6 +320,8 @@
                                 <constraint firstAttribute="bottom" secondItem="q0b-Z0-cT9" secondAttribute="bottom" constant="20" id="zfE-eH-yo7"/>
                             </constraints>
                         </view>
+=======
+>>>>>>> parent of 33fc88b (Merge pull request #5 from buneassassin/origin/China)
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="R1q-6A-cwd">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -303,7 +330,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" red="0.91372549530000002" green="0.20000001789999999" blue="0.13725490870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -313,7 +339,11 @@
                         </connections>
                     </collectionView>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="tiempoTranscurrido" destination="IP8-hM-40C" id="769-ma-r7d"/>
+=======
+                        <outlet property="colMinas" destination="zxo-ma-eBM" id="17p-zC-qaz"/>
+>>>>>>> parent of 33fc88b (Merge pull request #5 from buneassassin/origin/China)
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awq-yy-evi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -323,7 +353,11 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2419.5348837209303" y="10.300429184549357"/>
+=======
+            <point key="canvasLocation" x="2420" y="11"/>
+>>>>>>> parent of 33fc88b (Merge pull request #5 from buneassassin/origin/China)
         </scene>
     </scenes>
     <resources>

@@ -1,11 +1,19 @@
+//
+//  MinasCollectionViewCell.swift
+//  Proyecto2
+//
+//  Created by Tobias Rodriguez Lujan on 06/03/25.
+//
+
 import UIKit
 
 class MinasCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var label: UILabel!
-
-    override func awakeFromNib() {
+   @IBOutlet weak var imgEstado: UIImageView!
+   
+   override func awakeFromNib() {
         super.awakeFromNib()
+<<<<<<< HEAD
         // Configuración inicial del label
         label.font = UIFont.systemFont(ofSize: 24)
         label.textAlignment = .center
@@ -40,6 +48,9 @@ class MinasCollectionViewCell: UICollectionViewCell {
             contentView.backgroundColor = .green
            label.text = cellData.isFlagged ? "🚩" : ""
         }
+=======
+        // Initialization code
+>>>>>>> parent of 33fc88b (Merge pull request #5 from buneassassin/origin/China)
     }
 
 }

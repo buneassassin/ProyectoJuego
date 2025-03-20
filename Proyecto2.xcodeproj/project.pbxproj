@@ -12,7 +12,6 @@
 		7AD5FC5B2D8B32710032E9D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */; };
 		7AF31F512D83D34800DA0A62 /* MinasUICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */; };
 		E34E9BE52D808F01003A9209 /* SplachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E9BE42D808F01003A9209 /* SplachViewController.swift */; };
-		E34E9C302D89D2FA003A9209 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */; };
 		E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */; };
 		E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */; };
 		E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CED2D72C34800E0BC88 /* ViewController.swift */; };
@@ -40,7 +39,6 @@
 		7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinasUICollectionViewController.swift; sourceTree = "<group>"; };
 		E34E9BE42D808F01003A9209 /* SplachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplachViewController.swift; sourceTree = "<group>"; };
-		E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		E3A17CE62D72C34800E0BC88 /* Proyecto2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				7AD5FBCD2D8B0F1D0032E9D0 /* CeldaRecord */,
 				7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */,
 				E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */,
-				E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */,
 				E3A17D802D7A31ED00E0BC88 /* Cell */,
 				E3A17CF42D72C34D00E0BC88 /* LaunchScreen.storyboard */,
 				E3A17D692D79F54B00E0BC88 /* BuscaMinasImg */,
@@ -247,7 +244,6 @@
 				E34E9BE52D808F01003A9209 /* SplachViewController.swift in Sources */,
 				7AD5FC582D8B2FEF0032E9D0 /* Record.swift in Sources */,
 				E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */,
-				E34E9C302D89D2FA003A9209 /* GameBoard.swift in Sources */,
 				7AF31F512D83D34800DA0A62 /* MinasUICollectionViewController.swift in Sources */,
 				E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */,
 				7AD5FBD72D8B1E450032E9D0 /* RecordViewController.swift in Sources */,
