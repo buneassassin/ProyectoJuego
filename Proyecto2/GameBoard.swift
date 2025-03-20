@@ -43,7 +43,7 @@ class GameBoard: NSObject {
         }
     }
     
-    // Cuenta las minas adyacentes a una celda dada
+   // Cuenta las minas adyacentes a una celda dada
     private func countAdjacentMines(row: Int, col: Int) -> Int {
         var count = 0
         for i in max(row - 1, 0)...min(row + 1, rows - 1) {
@@ -102,23 +102,3 @@ class GameBoard: NSObject {
        }
     }
 }
-
-
-/*
- func printBoard() {
-     print(" ")
-     for row in cells {
-         var rowText = ""
-         for cell in row {
-             if cell.isMine {
-                 rowText += "* "
-             } else if cell.adjacentMines > 0 {
-                 rowText += "\(cell.adjacentMines) "
-             } else {
-                 rowText += "░ "
-             }
-         }
-         print(rowText)
-     }
- }
- */

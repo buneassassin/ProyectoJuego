@@ -184,20 +184,44 @@
             </objects>
             <point key="canvasLocation" x="823.125" y="768.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Record View Controller-->
         <scene sceneID="OKN-XE-Bnm">
             <objects>
-                <viewController id="qbO-Ly-Nf5" sceneMemberID="viewController">
+                <viewController id="qbO-Ly-Nf5" customClass="RecordViewController" customModule="Proyecto2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMf-AB-1t1">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ige-z3-YY4">
+                                <rect key="frame" x="0.0" y="92" width="430" height="830"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Records" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuO-Dh-Ppi">
+                                <rect key="frame" x="0.0" y="50" width="430" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XSI-qA-a9G"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LuO-Dh-Ppi" firstAttribute="leading" secondItem="XSI-qA-a9G" secondAttribute="leading" id="66n-DZ-tjh"/>
+                            <constraint firstItem="XSI-qA-a9G" firstAttribute="bottom" secondItem="Ige-z3-YY4" secondAttribute="bottom" id="G3V-FB-qbJ"/>
+                            <constraint firstItem="LuO-Dh-Ppi" firstAttribute="top" secondItem="XSI-qA-a9G" secondAttribute="top" constant="50" id="M9G-9I-Qc9"/>
+                            <constraint firstItem="XSI-qA-a9G" firstAttribute="trailing" secondItem="LuO-Dh-Ppi" secondAttribute="trailing" id="iOQ-To-ajs"/>
+                            <constraint firstItem="XSI-qA-a9G" firstAttribute="trailing" secondItem="Ige-z3-YY4" secondAttribute="trailing" id="q0R-bB-Qvr"/>
+                            <constraint firstItem="Ige-z3-YY4" firstAttribute="leading" secondItem="XSI-qA-a9G" secondAttribute="leading" id="ufu-3C-rmp"/>
+                            <constraint firstItem="Ige-z3-YY4" firstAttribute="top" secondItem="LuO-Dh-Ppi" secondAttribute="bottom" id="wM2-Ep-qSr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tvRecord" destination="Ige-z3-YY4" id="25x-nF-keD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ub4-Kt-aUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="-617"/>
+            <point key="canvasLocation" x="1890.6976744186047" y="-631.54506437768248"/>
         </scene>
         <!--MinasUI Collection View Controller-->
         <scene sceneID="xWe-fh-1Nr">
@@ -207,6 +231,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PUr-A3-rec">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -265,6 +290,7 @@
                                 <constraint firstItem="IP8-hM-40C" firstAttribute="centerY" secondItem="Y30-A3-R0w" secondAttribute="centerY" multiplier="0.2" id="OUh-pA-Lqv"/>
                                 <constraint firstItem="sW4-Fl-NWz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="q0b-Z0-cT9" secondAttribute="trailing" constant="8" symbolic="YES" id="aNi-mb-FoZ"/>
                                 <constraint firstItem="IP8-hM-40C" firstAttribute="width" secondItem="Y30-A3-R0w" secondAttribute="width" multiplier="0.35" id="ch0-zv-nig"/>
+                                <constraint firstItem="IP8-hM-40C" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y30-A3-R0w" secondAttribute="leading" constant="20" symbolic="YES" id="csR-Ek-iOR"/>
                                 <constraint firstItem="q0b-Z0-cT9" firstAttribute="leading" secondItem="Y30-A3-R0w" secondAttribute="leading" constant="40" id="hLB-9V-IzE"/>
                                 <constraint firstAttribute="bottom" secondItem="q0b-Z0-cT9" secondAttribute="bottom" constant="20" id="zfE-eH-yo7"/>
                             </constraints>
@@ -283,6 +309,7 @@
                         <connections>
                             <outlet property="dataSource" destination="8yJ-h4-q3M" id="b1X-Ui-Mqc"/>
                             <outlet property="delegate" destination="8yJ-h4-q3M" id="3xw-lo-6cO"/>
+                            <outletCollection property="gestureRecognizers" destination="PPP-zV-3e2" appends="YES" id="yn5-dc-iAn"/>
                         </connections>
                     </collectionView>
                     <connections>
@@ -290,6 +317,11 @@
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awq-yy-evi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.20000000000000001" id="PPP-zV-3e2">
+                    <connections>
+                        <action selector="bandera:" destination="8yJ-h4-q3M" id="t3v-3Y-8mg"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2419.5348837209303" y="10.300429184549357"/>
         </scene>

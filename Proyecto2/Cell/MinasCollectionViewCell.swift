@@ -38,8 +38,24 @@ class MinasCollectionViewCell: UICollectionViewCell {
             }
         } else {
             contentView.backgroundColor = .green
-            label.text = ""
+           label.text = cellData.isFlagged ? "🚩" : ""
         }
     }
 
 }
+
+/*
+        if cellData.isRevealed {
+            backgroundColor = UIColor.lightGray
+            if cellData.isMine {
+                label.text = "💣"
+                backgroundColor = .red
+            } else {
+                label.text = cellData.adjacentMines > 0 ? "\(cellData.adjacentMines)" : ""
+                setNumberColor(cellData.adjacentMines)
+            }
+        } else {
+            backgroundColor = UIColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 1)
+            label.text = cellData.isFlagged ? "🚩" : ""
+        }
+*/
