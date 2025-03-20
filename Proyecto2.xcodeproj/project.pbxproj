@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AD5FBD72D8B1E450032E9D0 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5FBD62D8B1E450032E9D0 /* RecordViewController.swift */; };
+		7AD5FC582D8B2FEF0032E9D0 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5FC572D8B2FEF0032E9D0 /* Record.swift */; };
+		7AD5FC5B2D8B32710032E9D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */; };
 		7AF31F512D83D34800DA0A62 /* MinasUICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */; };
 		E34E9BE52D808F01003A9209 /* SplachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E9BE42D808F01003A9209 /* SplachViewController.swift */; };
 		E34E9C302D89D2FA003A9209 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AD5FBD62D8B1E450032E9D0 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		7AD5FC572D8B2FEF0032E9D0 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinasUICollectionViewController.swift; sourceTree = "<group>"; };
 		E34E9BE42D808F01003A9209 /* SplachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplachViewController.swift; sourceTree = "<group>"; };
 		E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
@@ -58,21 +64,36 @@
 		E3A17D8D2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cool Text - Responsables 477650993489581.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7AC14A362D8BBD8A006A0AD4 /* sonidos */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = sonidos; sourceTree = "<group>"; };
+		7AD5FBCD2D8B0F1D0032E9D0 /* CeldaRecord */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CeldaRecord; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		E3A17CE32D72C34800E0BC88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD5FC5B2D8B32710032E9D0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AD5FC592D8B32700032E9D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E3A17CDD2D72C34800E0BC88 = {
 			isa = PBXGroup;
 			children = (
 				E3A17CE82D72C34800E0BC88 /* Proyecto2 */,
+				7AD5FC592D8B32700032E9D0 /* Frameworks */,
 				E3A17CE72D72C34800E0BC88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,11 +109,13 @@
 		E3A17CE82D72C34800E0BC88 /* Proyecto2 */ = {
 			isa = PBXGroup;
 			children = (
+				7AC14A362D8BBD8A006A0AD4 /* sonidos */,
 				E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */,
 				E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */,
 				E3A17CED2D72C34800E0BC88 /* ViewController.swift */,
 				E34E9BE42D808F01003A9209 /* SplachViewController.swift */,
 				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
+				7AD5FBCD2D8B0F1D0032E9D0 /* CeldaRecord */,
 				7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */,
 				E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */,
 				E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */,
@@ -100,6 +123,8 @@
 				E3A17CF42D72C34D00E0BC88 /* LaunchScreen.storyboard */,
 				E3A17D692D79F54B00E0BC88 /* BuscaMinasImg */,
 				E3A17CF72D72C34E00E0BC88 /* Info.plist */,
+				7AD5FBD62D8B1E450032E9D0 /* RecordViewController.swift */,
+				7AD5FC572D8B2FEF0032E9D0 /* Record.swift */,
 			);
 			path = Proyecto2;
 			sourceTree = "<group>";
@@ -145,6 +170,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7AC14A362D8BBD8A006A0AD4 /* sonidos */,
+				7AD5FBCD2D8B0F1D0032E9D0 /* CeldaRecord */,
 			);
 			name = Proyecto2;
 			productName = Proyecto2;
@@ -216,10 +245,12 @@
 			files = (
 				E3A17D842D7A31ED00E0BC88 /* MinasCollectionViewCell.swift in Sources */,
 				E34E9BE52D808F01003A9209 /* SplachViewController.swift in Sources */,
+				7AD5FC582D8B2FEF0032E9D0 /* Record.swift in Sources */,
 				E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */,
 				E34E9C302D89D2FA003A9209 /* GameBoard.swift in Sources */,
 				7AF31F512D83D34800DA0A62 /* MinasUICollectionViewController.swift in Sources */,
 				E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */,
+				7AD5FBD72D8B1E450032E9D0 /* RecordViewController.swift in Sources */,
 				E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +415,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = UTT.Proyecto2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -412,6 +447,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = UTT.Proyecto2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
