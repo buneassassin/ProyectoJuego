@@ -1,93 +1,178 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
+      "filename" : "mina-2.jpg",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "idiom" : "mac",
       "scale" : "2x",
-      "size" : "20x20"
+      "size" : "16x16"
     },
     {
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "20x20"
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "32x32"
     },
     {
-      "idiom" : "iphone",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "32x32"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "128x128"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "128x128"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "256x256"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "256x256"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "512x512"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "512x512"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "22x22"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "24x24"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "27.5x27.5"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "29x29"
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "30x30"
     },
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "32x32"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "33x33"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "40x40"
-    },
-    {
-      "idiom" : "iphone",
+      "idiom" : "universal",
+      "platform" : "watchos",
       "scale" : "2x",
-      "size" : "60x60"
+      "size" : "43.5x43.5"
     },
     {
-      "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "60x60"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "20x20"
-    },
-    {
-      "idiom" : "ipad",
+      "idiom" : "universal",
+      "platform" : "watchos",
       "scale" : "2x",
-      "size" : "20x20"
+      "size" : "44x44"
     },
     {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "29x29"
-    },
-    {
-      "idiom" : "ipad",
+      "idiom" : "universal",
+      "platform" : "watchos",
       "scale" : "2x",
-      "size" : "29x29"
+      "size" : "46x46"
     },
     {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "40x40"
-    },
-    {
-      "idiom" : "ipad",
+      "idiom" : "universal",
+      "platform" : "watchos",
       "scale" : "2x",
-      "size" : "40x40"
+      "size" : "50x50"
     },
     {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "76x76"
-    },
-    {
-      "idiom" : "ipad",
+      "idiom" : "universal",
+      "platform" : "watchos",
       "scale" : "2x",
-      "size" : "76x76"
+      "size" : "51x51"
     },
     {
-      "idiom" : "ipad",
+      "idiom" : "universal",
+      "platform" : "watchos",
       "scale" : "2x",
-      "size" : "83.5x83.5"
+      "size" : "54x54"
     },
     {
-      "idiom" : "ios-marketing",
-      "scale" : "1x",
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "86x86"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "98x98"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "108x108"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "117x117"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "scale" : "2x",
+      "size" : "129x129"
+    },
+    {
+      "idiom" : "universal",
+      "platform" : "watchos",
       "size" : "1024x1024"
     }
   ],
