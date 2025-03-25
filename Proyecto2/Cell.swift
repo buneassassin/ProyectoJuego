@@ -7,8 +7,8 @@
 
 import Foundation
 // Cell.swift
-struct Cell {
+/*struct Cell {
     var isRevealed: Bool = false
     var hasMine: Bool = false
     var adjacentMines: Int = 0
-}
+}*/

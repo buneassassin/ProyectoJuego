@@ -79,52 +79,61 @@ class MinasUICollectionViewController: UICollectionViewController {
       return cell
    }
    
-   private func playSafeSound() {
-       audioQueue.async { [weak self] in
-           guard let self = self,
-                 let url = Bundle.main.url(forResource: "sound-9", withExtension: "mp3") else { return }
-           
-           do {
-               let randomRate = Float.random(in: 0.9...1.1)
-               let randomPitch = Float.random(in: -300...300)
-               
-               // Nuevo engine por reproducción
-               let engine = AVAudioEngine()
-               let playerNode = AVAudioPlayerNode()
-               let pitchEffect = AVAudioUnitTimePitch()
-               
-               let audioFile = try AVAudioFile(forReading: url)
-               
-               pitchEffect.pitch = randomPitch
-               
-               engine.attach(playerNode)
-               engine.attach(pitchEffect)
-               
-               engine.connect(playerNode, to: pitchEffect, format: nil)
-               engine.connect(pitchEffect, to: engine.outputNode, format: nil)
-               
-               playerNode.scheduleFile(audioFile, at: nil) {
-                   DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                       engine.stop()
-                       engine.detach(playerNode)
-                       engine.detach(pitchEffect)
-                   }
-               }
-               
-               try engine.start()
-               playerNode.play()
-               
-               // Rate debe aplicarse así
-               playerNode.rate = randomRate
-               
-               // Retener engine mientras se reproduce
-               self.audioEngine = engine
-               
-           } catch {
-               print("Error: \(error.localizedDescription)")
-           }
-       }
-   }
+    private func playSafeSound() {
+        audioQueue.async { [weak self] in
+            guard let self = self,
+                  let url = Bundle.main.url(forResource: "sound-9", withExtension: "mp3") else { return }
+            
+            do {
+                let randomRate = Float.random(in: 0.9...1.1)
+                let randomPitch = Float.random(in: -300...300)
+                
+                // Crear el engine y los nodos
+                let engine = AVAudioEngine()
+                let playerNode = AVAudioPlayerNode()
+                let varispeed = AVAudioUnitVarispeed()   // Para modificar la velocidad de reproducción
+                let pitchEffect = AVAudioUnitTimePitch()   // Para modificar el tono (pitch)
+                
+                // Configurar los parámetros de los nodos
+                varispeed.rate = randomRate
+                pitchEffect.pitch = randomPitch
+                
+                // Adjuntar nodos al engine
+                engine.attach(playerNode)
+                engine.attach(varispeed)
+                engine.attach(pitchEffect)
+                
+                // Conectar los nodos: Player -> Varispeed -> PitchEffect -> Output
+                engine.connect(playerNode, to: varispeed, format: nil)
+                engine.connect(varispeed, to: pitchEffect, format: nil)
+                engine.connect(pitchEffect, to: engine.outputNode, format: nil)
+                
+                // Cargar el archivo de audio
+                let audioFile = try AVAudioFile(forReading: url)
+                
+                // Programar la reproducción del archivo
+                playerNode.scheduleFile(audioFile, at: nil) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        engine.stop()
+                        engine.detach(playerNode)
+                        engine.detach(varispeed)
+                        engine.detach(pitchEffect)
+                    }
+                }
+                
+                // Iniciar el engine y reproducir
+                try engine.start()
+                playerNode.play()
+                
+                // Retener el engine mientras se reproduce
+                self.audioEngine = engine
+                
+            } catch {
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+    }
+
 
    
    private func playMineSound() {
@@ -212,39 +221,66 @@ class MinasUICollectionViewController: UICollectionViewController {
       
       let alert = UIAlertController(title: "¡Game Over!", message: mensaje, preferredStyle: .alert)
       
-      // Opción para guardar puntuación
-      alert.addAction(UIAlertAction(title: "Guardar Puntuación", style: .default, handler: { _ in
-         self.promptForName()
-      }))
-      
       // Opción para reiniciar sin guardar
-      alert.addAction(UIAlertAction(title: "Reiniciar sin Guardar", style: .destructive, handler: { _ in
+      alert.addAction(UIAlertAction(title: "Reiniciar", style: .destructive, handler: { _ in
          self.restartGame()
       }))
       
       present(alert, animated: true, completion: nil)
    }
    
-   private func showVictory() {
-      timer?.invalidate()
-      
-      r.puntuacion = calcularPuntuacion() + 30
-      let mensaje = "¡Felicidades! Tiempo: \(formattedTime(seconds: elapsedSeconds)). Puntuación: \(r.puntuacion)"
-      
-      let alert = UIAlertController(title: "¡Ganaste!", message: mensaje, preferredStyle: .alert)
-      
-      // Opción para guardar puntuación
-      alert.addAction(UIAlertAction(title: "Guardar Puntuación", style: .default, handler: { _ in
-         self.promptForName()
-      }))
-      
-      // Opción para reiniciar sin guardar
-      alert.addAction(UIAlertAction(title: "Reiniciar sin Guardar", style: .destructive, handler: { _ in
-         self.restartGame()
-      }))
-      
-      present(alert, animated: true, completion: nil)
-   }
+    private func showVictory() {
+        timer?.invalidate()
+        
+        // Se calcula la puntuación final (por ejemplo, se le suma 30 si ganó)
+        r.puntuacion = calcularPuntuacion() + 30
+        let mensaje = "¡Felicidades! Tiempo: \(formattedTime(seconds: elapsedSeconds)). Puntuación: \(r.puntuacion)"
+        
+        // Cargar registros existentes para determinar si la nueva puntuación entra en el top 5
+        let ruta = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/records.plist"
+        let urlArchivo = URL(fileURLWithPath: ruta)
+        var recordsArray = [[String: Any]]()
+        if FileManager.default.fileExists(atPath: ruta) {
+            do {
+                let data = try Data(contentsOf: urlArchivo)
+                recordsArray = try PropertyListSerialization.propertyList(from: data, format: nil) as? [[String: Any]] ?? []
+            } catch {
+                print("Error al leer archivo: \(error)")
+            }
+        }
+        
+        // Si ya hay 5 o más registros, se ordena de mayor a menor y se toma el quinto
+        var shouldSave = true
+        if recordsArray.count >= 5 {
+            let sortedRecords = recordsArray.sorted { (registroA, registroB) -> Bool in
+                let puntuacionA = registroA["pun"] as? Int ?? 0
+                let puntuacionB = registroB["pun"] as? Int ?? 0
+                return puntuacionA > puntuacionB
+            }
+            let quintaPuntuacion = sortedRecords[4]["pun"] as? Int ?? 0
+            // Si la nueva puntuación es menor o igual al quinto mejor, no se permite guardar
+            if r.puntuacion <= quintaPuntuacion {
+                shouldSave = false
+            }
+        }
+        
+        let alert = UIAlertController(title: "¡Ganaste!", message: mensaje, preferredStyle: .alert)
+        
+        // Si la nueva puntuación está entre las 5 mejores, se muestra la opción de guardar
+        if shouldSave {
+            alert.addAction(UIAlertAction(title: "Guardar Puntuación", style: .default, handler: { _ in
+                self.promptForName()
+            }))
+        }
+        
+        // Siempre se ofrece la opción de reiniciar sin guardar
+        alert.addAction(UIAlertAction(title: "Reiniciar sin Guardar", style: .destructive, handler: { _ in
+            self.restartGame()
+        }))
+        
+        present(alert, animated: true, completion: nil)
+    }
+
    
    private func promptForName() {
       let alert = UIAlertController(
