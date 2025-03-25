@@ -18,8 +18,9 @@
 		E35DE8F72D930E2900D3C6B6 /* MinesweeperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DE8F52D930E2900D3C6B6 /* MinesweeperViewController.swift */; };
 		E35DE8F82D930E2900D3C6B6 /* MinasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DE8F62D930E2900D3C6B6 /* MinasCollectionViewController.swift */; };
 		E35DE8FA2D930E4400D3C6B6 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DE8F92D930E4400D3C6B6 /* Cell.swift */; };
-		E35DE8FC2D93118E00D3C6B6 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E35DE8FB2D93118E00D3C6B6 /* images.jpeg */; };
-		E35DE8FE2D9311A400D3C6B6 /* fondoMinas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35DE8FD2D9311A400D3C6B6 /* fondoMinas.jpg */; };
+		E35DE9022D9333B300D3C6B6 /* bomba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E35DE9002D9333B300D3C6B6 /* bomba.mp3 */; };
+		E35DE9032D9333B300D3C6B6 /* sound-9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E35DE9012D9333B300D3C6B6 /* sound-9.mp3 */; };
+		E35DE9052D93341000D3C6B6 /* fondoMinas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35DE9042D93341000D3C6B6 /* fondoMinas.jpg */; };
 		E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */; };
 		E3A17CEC2D72C34800E0BC88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */; };
 		E3A17CEE2D72C34800E0BC88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A17CED2D72C34800E0BC88 /* ViewController.swift */; };
@@ -53,8 +54,9 @@
 		E35DE8F52D930E2900D3C6B6 /* MinesweeperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinesweeperViewController.swift; sourceTree = "<group>"; };
 		E35DE8F62D930E2900D3C6B6 /* MinasCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinasCollectionViewController.swift; sourceTree = "<group>"; };
 		E35DE8F92D930E4400D3C6B6 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		E35DE8FB2D93118E00D3C6B6 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../../../../Downloads/images.jpeg; sourceTree = "<group>"; };
-		E35DE8FD2D9311A400D3C6B6 /* fondoMinas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondoMinas.jpg; path = ../../../../../../Downloads/fondoMinas.jpg; sourceTree = "<group>"; };
+		E35DE9002D9333B300D3C6B6 /* bomba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomba.mp3; sourceTree = "<group>"; };
+		E35DE9012D9333B300D3C6B6 /* sound-9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-9.mp3"; sourceTree = "<group>"; };
+		E35DE9042D93341000D3C6B6 /* fondoMinas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondoMinas.jpg; sourceTree = "<group>"; };
 		E3A17CE62D72C34800E0BC88 /* Proyecto2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,15 @@
 			path = CeldaRecord;
 			sourceTree = "<group>";
 		};
+		E35DE8FF2D9333B300D3C6B6 /* sonidos */ = {
+			isa = PBXGroup;
+			children = (
+				E35DE9002D9333B300D3C6B6 /* bomba.mp3 */,
+				E35DE9012D9333B300D3C6B6 /* sound-9.mp3 */,
+			);
+			path = sonidos;
+			sourceTree = "<group>";
+		};
 		E3A17CDD2D72C34800E0BC88 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +143,7 @@
 				E3A17CED2D72C34800E0BC88 /* ViewController.swift */,
 				E34E9BE42D808F01003A9209 /* SplachViewController.swift */,
 				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
+				E35DE8FF2D9333B300D3C6B6 /* sonidos */,
 				7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */,
 				E3A17CF22D72C34D00E0BC88 /* Assets.xcassets */,
 				E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */,
@@ -152,8 +164,7 @@
 		E3A17D692D79F54B00E0BC88 /* BuscaMinasImg */ = {
 			isa = PBXGroup;
 			children = (
-				E35DE8FD2D9311A400D3C6B6 /* fondoMinas.jpg */,
-				E35DE8FB2D93118E00D3C6B6 /* images.jpeg */,
+				E35DE9042D93341000D3C6B6 /* fondoMinas.jpg */,
 				E3A17D8D2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png */,
 				E3A17D8B2D7A79E900E0BC88 /* titulo.jpeg */,
 				E3A17D852D7A334300E0BC88 /* fondo.jpeg */,
@@ -239,16 +250,17 @@
 				E3A17CF62D72C34D00E0BC88 /* LaunchScreen.storyboard in Resources */,
 				E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */,
 				E3A17D8E2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png in Resources */,
-				E35DE8FE2D9311A400D3C6B6 /* fondoMinas.jpg in Resources */,
 				E3A17D732D79F54B00E0BC88 /* imagen1.jpeg in Resources */,
 				E3A17D772D79F54B00E0BC88 /* bomba.jpg in Resources */,
 				E3A17D862D7A334300E0BC88 /* fondo.jpeg in Resources */,
-				E35DE8FC2D93118E00D3C6B6 /* images.jpeg in Resources */,
+				E35DE9032D9333B300D3C6B6 /* sound-9.mp3 in Resources */,
 				E3A17CF32D72C34D00E0BC88 /* Assets.xcassets in Resources */,
 				E3A17CF12D72C34800E0BC88 /* Main.storyboard in Resources */,
 				E3A17D722D79F54B00E0BC88 /* 1.jpeg in Resources */,
+				E35DE9052D93341000D3C6B6 /* fondoMinas.jpg in Resources */,
 				E3A17D832D7A31ED00E0BC88 /* MinasCollectionViewCell.xib in Resources */,
 				E35DE8F32D930BAD00D3C6B6 /* RecordTableViewCell.xib in Resources */,
+				E35DE9022D9333B300D3C6B6 /* bomba.mp3 in Resources */,
 				E3A17D742D79F54B00E0BC88 /* bandera.jpeg in Resources */,
 				E3A17D8C2D7A79E900E0BC88 /* titulo.jpeg in Resources */,
 				E3A17D762D79F54B00E0BC88 /* icono.jpeg in Resources */,

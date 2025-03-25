@@ -369,7 +369,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cIe-ck-Nk6">
                                 <rect key="frame" x="10" y="100" width="408" height="718"/>
-                                <mutableString key="text">Objetivo:
+                                <string key="text">Objetivo:
 El objetivo del juego es revelar todas las celdas que no contienen minas sin pisar ninguna. ¡Cuidado! Si revela una celda que oculta una mina, el juego terminará y se mostrarán todas las minas.
 
 Cómo jugar:
@@ -432,7 +432,7 @@ Trata de jugar de manera metódica y sin prisas. Un buen equilibrio entre veloci
 Aprende de Cada Partida:
 Cada tablero se genera de forma aleatoria, por lo que cada partida es única. Con la práctica, mejorarás tu capacidad para identificar rápidamente las celdas seguras.
 
-¡Disfruta el reto y conviértete en un experto en Busca Minas!</mutableString>
+¡Disfruta el reto y conviértete en un experto en Busca Minas!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
