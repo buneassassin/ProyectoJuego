@@ -137,7 +137,7 @@ class MinasUICollectionViewController: UICollectionViewController {
 
    
    private func playMineSound() {
-       guard let url = Bundle.main.url(forResource: "bomba", withExtension: "mp3") else { return }
+       guard let url = Bundle.main.url(forResource: "TNTDEFINITIVO", withExtension: "mp3") else { return }
        
        do {
            let player = try AVAudioPlayer(contentsOf: url)
@@ -217,6 +217,7 @@ class MinasUICollectionViewController: UICollectionViewController {
       
       // Calcular y mostrar puntuación
       r.puntuacion = calcularPuntuacion()
+      r.puntuacion = max(r.puntuacion, 1)
       let mensaje = "Has pisado una mina. Tiempo: \(formattedTime(seconds: elapsedSeconds)). Puntuación: \(r.puntuacion)"
       
       let alert = UIAlertController(title: "¡Game Over!", message: mensaje, preferredStyle: .alert)
@@ -233,7 +234,7 @@ class MinasUICollectionViewController: UICollectionViewController {
         timer?.invalidate()
         
         // Se calcula la puntuación final (por ejemplo, se le suma 30 si ganó)
-        r.puntuacion = calcularPuntuacion() + 30
+       r.puntuacion = max(calcularPuntuacion() + 30, 1)
         let mensaje = "¡Felicidades! Tiempo: \(formattedTime(seconds: elapsedSeconds)). Puntuación: \(r.puntuacion)"
         
         // Cargar registros existentes para determinar si la nueva puntuación entra en el top 5

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A2EF14D2D93380A0021CE7D /* mina-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A2EF14C2D93380A0021CE7D /* mina-2.jpg */; };
+		7A490A4B2D984CA400295CC2 /* TNTDEFINITIVO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A490A4A2D984CA400295CC2 /* TNTDEFINITIVO.mp3 */; };
 		7AD5FBD72D8B1E450032E9D0 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5FBD62D8B1E450032E9D0 /* RecordViewController.swift */; };
 		7AD5FC582D8B2FEF0032E9D0 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5FC572D8B2FEF0032E9D0 /* Record.swift */; };
 		7AD5FC5B2D8B32710032E9D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		7A2EF14C2D93380A0021CE7D /* mina-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mina-2.jpg"; sourceTree = "<group>"; };
+		7A490A4A2D984CA400295CC2 /* TNTDEFINITIVO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TNTDEFINITIVO.mp3; sourceTree = "<group>"; };
 		7AD5FBD62D8B1E450032E9D0 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		7AD5FC572D8B2FEF0032E9D0 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E35DE9002D9333B300D3C6B6 /* bomba.mp3 */,
+				7A490A4A2D984CA400295CC2 /* TNTDEFINITIVO.mp3 */,
 				E35DE9012D9333B300D3C6B6 /* sound-9.mp3 */,
 			);
 			path = sonidos;
@@ -253,6 +256,7 @@
 				E3A17CF62D72C34D00E0BC88 /* LaunchScreen.storyboard in Resources */,
 				E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */,
 				E3A17D8E2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png in Resources */,
+				7A490A4B2D984CA400295CC2 /* TNTDEFINITIVO.mp3 in Resources */,
 				E3A17D732D79F54B00E0BC88 /* imagen1.jpeg in Resources */,
 				E3A17D772D79F54B00E0BC88 /* bomba.jpg in Resources */,
 				7A2EF14D2D93380A0021CE7D /* mina-2.jpg in Resources */,
@@ -447,8 +451,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,8 +482,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
