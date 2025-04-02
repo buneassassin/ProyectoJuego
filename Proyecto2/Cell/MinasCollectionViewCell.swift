@@ -32,7 +32,7 @@ class MinasCollectionViewCell: UICollectionViewCell {
                 case 4:
                     contentView.backgroundColor = UIColor.systemPurple
                 default:
-                    contentView.backgroundColor = .lightGray
+                   contentView.backgroundColor = UIColor.systemGray3
                 }
                 label.text = cellData.adjacentMines > 0 ? "\(cellData.adjacentMines)" : ""
             }
