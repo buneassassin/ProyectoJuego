@@ -13,6 +13,12 @@
 		7AD5FC582D8B2FEF0032E9D0 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5FC572D8B2FEF0032E9D0 /* Record.swift */; };
 		7AD5FC5B2D8B32710032E9D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */; };
 		7AF31F512D83D34800DA0A62 /* MinasUICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */; };
+		E3450F3A2D9CB123000F2018 /* fondoN.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3450F392D9CB123000F2018 /* fondoN.jpeg */; };
+		E3450F3C2D9CB763000F2018 /* fondoMinecraft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3450F3B2D9CB763000F2018 /* fondoMinecraft.jpg */; };
+		E3450F3E2D9CB965000F2018 /* TNT.png in Resources */ = {isa = PBXBuildFile; fileRef = E3450F3D2D9CB965000F2018 /* TNT.png */; };
+		E3450F422D9CBA67000F2018 /* fondoMinasMinecraft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3450F412D9CBA67000F2018 /* fondoMinasMinecraft.jpg */; };
+		E3450F462D9CBCCB000F2018 /* C418.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E3450F452D9CBCCB000F2018 /* C418.mp3 */; };
+		E3450F482D9CBED6000F2018 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3450F472D9CBED6000F2018 /* AudioManager.swift */; };
 		E34E9BE52D808F01003A9209 /* SplachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E9BE42D808F01003A9209 /* SplachViewController.swift */; };
 		E34E9C302D89D2FA003A9209 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */; };
 		E35DE8F32D930BAD00D3C6B6 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35DE8F12D930BAD00D3C6B6 /* RecordTableViewCell.xib */; };
@@ -51,6 +57,12 @@
 		7AD5FC572D8B2FEF0032E9D0 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		7AD5FC5A2D8B32710032E9D0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7AF31F502D83D34800DA0A62 /* MinasUICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinasUICollectionViewController.swift; sourceTree = "<group>"; };
+		E3450F392D9CB123000F2018 /* fondoN.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondoN.jpeg; sourceTree = "<group>"; };
+		E3450F3B2D9CB763000F2018 /* fondoMinecraft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondoMinecraft.jpg; sourceTree = "<group>"; };
+		E3450F3D2D9CB965000F2018 /* TNT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TNT.png; sourceTree = "<group>"; };
+		E3450F412D9CBA67000F2018 /* fondoMinasMinecraft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondoMinasMinecraft.jpg; sourceTree = "<group>"; };
+		E3450F452D9CBCCB000F2018 /* C418.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C418.mp3; sourceTree = "<group>"; };
+		E3450F472D9CBED6000F2018 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		E34E9BE42D808F01003A9209 /* SplachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplachViewController.swift; sourceTree = "<group>"; };
 		E34E9C2F2D89D2FA003A9209 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		E35DE8F12D930BAD00D3C6B6 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
@@ -116,6 +128,7 @@
 		E35DE8FF2D9333B300D3C6B6 /* sonidos */ = {
 			isa = PBXGroup;
 			children = (
+				E3450F452D9CBCCB000F2018 /* C418.mp3 */,
 				E35DE9002D9333B300D3C6B6 /* bomba.mp3 */,
 				7A490A4A2D984CA400295CC2 /* TNTDEFINITIVO.mp3 */,
 				E35DE9012D9333B300D3C6B6 /* sound-9.mp3 */,
@@ -145,6 +158,7 @@
 			children = (
 				E3A17CE92D72C34800E0BC88 /* AppDelegate.swift */,
 				E3A17CEB2D72C34800E0BC88 /* SceneDelegate.swift */,
+				E3450F472D9CBED6000F2018 /* AudioManager.swift */,
 				E3A17CED2D72C34800E0BC88 /* ViewController.swift */,
 				E34E9BE42D808F01003A9209 /* SplachViewController.swift */,
 				E3A17CEF2D72C34800E0BC88 /* Main.storyboard */,
@@ -169,6 +183,10 @@
 		E3A17D692D79F54B00E0BC88 /* BuscaMinasImg */ = {
 			isa = PBXGroup;
 			children = (
+				E3450F3D2D9CB965000F2018 /* TNT.png */,
+				E3450F412D9CBA67000F2018 /* fondoMinasMinecraft.jpg */,
+				E3450F3B2D9CB763000F2018 /* fondoMinecraft.jpg */,
+				E3450F392D9CB123000F2018 /* fondoN.jpeg */,
 				E35DE9042D93341000D3C6B6 /* fondoMinas.jpg */,
 				E3A17D8D2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png */,
 				E3A17D8B2D7A79E900E0BC88 /* titulo.jpeg */,
@@ -253,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3450F3E2D9CB965000F2018 /* TNT.png in Resources */,
 				E3A17CF62D72C34D00E0BC88 /* LaunchScreen.storyboard in Resources */,
 				E3A17D782D79F54B00E0BC88 /* UTT.jpeg in Resources */,
 				E3A17D8E2D7A7B6100E0BC88 /* Cool Text - Responsables 477650993489581.png in Resources */,
@@ -262,6 +281,7 @@
 				7A2EF14D2D93380A0021CE7D /* mina-2.jpg in Resources */,
 				E3A17D862D7A334300E0BC88 /* fondo.jpeg in Resources */,
 				E35DE9032D9333B300D3C6B6 /* sound-9.mp3 in Resources */,
+				E3450F3A2D9CB123000F2018 /* fondoN.jpeg in Resources */,
 				E3A17CF32D72C34D00E0BC88 /* Assets.xcassets in Resources */,
 				E3A17CF12D72C34800E0BC88 /* Main.storyboard in Resources */,
 				E3A17D722D79F54B00E0BC88 /* 1.jpeg in Resources */,
@@ -269,9 +289,12 @@
 				E3A17D832D7A31ED00E0BC88 /* MinasCollectionViewCell.xib in Resources */,
 				E35DE8F32D930BAD00D3C6B6 /* RecordTableViewCell.xib in Resources */,
 				E35DE9022D9333B300D3C6B6 /* bomba.mp3 in Resources */,
+				E3450F3C2D9CB763000F2018 /* fondoMinecraft.jpg in Resources */,
 				E3A17D742D79F54B00E0BC88 /* bandera.jpeg in Resources */,
+				E3450F462D9CBCCB000F2018 /* C418.mp3 in Resources */,
 				E3A17D8C2D7A79E900E0BC88 /* titulo.jpeg in Resources */,
 				E3A17D762D79F54B00E0BC88 /* icono.jpeg in Resources */,
+				E3450F422D9CBA67000F2018 /* fondoMinasMinecraft.jpg in Resources */,
 				E3A17D792D79F54B00E0BC88 /* 3.jpeg in Resources */,
 				E3A17D752D79F54B00E0BC88 /* 2.jpeg in Resources */,
 			);
@@ -292,6 +315,7 @@
 				E35DE8FA2D930E4400D3C6B6 /* Cell.swift in Sources */,
 				E35DE8F72D930E2900D3C6B6 /* MinesweeperViewController.swift in Sources */,
 				7AF31F512D83D34800DA0A62 /* MinasUICollectionViewController.swift in Sources */,
+				E3450F482D9CBED6000F2018 /* AudioManager.swift in Sources */,
 				E3A17CEA2D72C34800E0BC88 /* AppDelegate.swift in Sources */,
 				7AD5FBD72D8B1E450032E9D0 /* RecordViewController.swift in Sources */,
 				E35DE8F82D930E2900D3C6B6 /* MinasCollectionViewController.swift in Sources */,

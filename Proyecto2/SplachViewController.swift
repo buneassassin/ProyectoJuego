@@ -1,7 +1,11 @@
 import UIKit
+import AVFoundation
 
 class SplashViewController: UIViewController {
     @IBOutlet weak var imvSplach: UIImageView!
+    
+    // Variable para reproducir el audio
+    var explosionPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,6 +17,11 @@ class SplashViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        // Programa la reproducción del sonido de explosión antes de finalizar la animación (por ejemplo, a los 2.5 segundos)
+        Timer.scheduledTimer(withTimeInterval: 2.5, repeats: false) { _ in
+            self.playExplosionSound()
+        }
         
         // Animación de 3 segundos usando keyframes para simular la "bomba a punto de explotar"
         UIView.animateKeyframes(withDuration: 3.0, delay: 0, options: [.calculationModeCubic], animations: {
@@ -38,5 +47,21 @@ class SplashViewController: UIViewController {
                 self.performSegue(withIdentifier: "sgSplash", sender: nil)
             }
         })
+    }
+    
+    // Función para reproducir el sonido de explosión
+    func playExplosionSound() {
+        if let explosionPath = Bundle.main.path(forResource: "TNTDEFINITIVO", ofType: "mp3") {
+            let explosionURL = URL(fileURLWithPath: explosionPath)
+            do {
+                self.explosionPlayer = try AVAudioPlayer(contentsOf: explosionURL)
+                self.explosionPlayer?.prepareToPlay()
+                self.explosionPlayer?.play()
+            } catch {
+                print("Error al reproducir el sonido de explosión: \(error)")
+            }
+        } else {
+            print("No se encontró el archivo de audio de explosión")
+        }
     }
 }

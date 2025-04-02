@@ -73,4 +73,22 @@ class RecordViewController: UIViewController, UITableViewDelegate, UITableViewDa
            
            return cell
        }
+    @IBAction func borrarRegistros(_ sender: UIButton) {
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let fileURL = documentsDirectory.appendingPathComponent("records.plist")
+        
+        if FileManager.default.fileExists(atPath: fileURL.path) {
+            do {
+                try FileManager.default.removeItem(at: fileURL)
+                print("Archivo eliminado")
+            } catch {
+                print("Error eliminando el archivo: \(error)")
+            }
+        }
+        
+        // Vaciar el arreglo de registros y recargar la tabla
+        records = []
+        tvRecord.reloadData()
+    }
+
    }

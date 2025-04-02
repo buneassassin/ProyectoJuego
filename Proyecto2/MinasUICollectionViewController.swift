@@ -16,7 +16,8 @@ class MinasUICollectionViewController: UICollectionViewController {
    let columns = 10
    var timer: Timer?
    var elapsedSeconds = 0
-   
+    @IBOutlet weak var scoreLabel: UILabel!
+
    let r = Record.sharedDatos()
    
    
@@ -180,12 +181,17 @@ class MinasUICollectionViewController: UICollectionViewController {
          repeats: true
       )
    }
-   
+
    @objc private func updateTimer() {
       elapsedSeconds += 1
       updateTimeLabel()
+       updateScoreLabel()
+
    }
-   
+    private func updateScoreLabel() {
+        let score = calcularPuntuacion()
+        scoreLabel.text = "Puntaje: \(score)"
+    }
    private func updateTimeLabel() {
       tiempoTranscurrido.text = "Tiempo: \(formattedTime(seconds: elapsedSeconds))"
    }
@@ -202,33 +208,41 @@ class MinasUICollectionViewController: UICollectionViewController {
       return true
    }
    
-   private func showGameOver() {
-      timer?.invalidate()
-      
-      // Revelar todas las minas
-      for row in 0..<rows {
-         for column in 0..<columns {
-            if gameBoard.cells[row][column].isMine {
-               gameBoard.cells[row][column].isRevealed = true
+    private func showGameOver() {
+        timer?.invalidate()
+        
+        // Revelar todas las minas
+        for row in 0..<rows {
+            for column in 0..<columns {
+                if gameBoard.cells[row][column].isMine {
+                    gameBoard.cells[row][column].isRevealed = true
+                }
             }
-         }
-      }
-      collectionView.reloadData()
-      
-      // Calcular y mostrar puntuación
-      r.puntuacion = calcularPuntuacion()
-      r.puntuacion = max(r.puntuacion, 1)
-      let mensaje = "Has pisado una mina. Tiempo: \(formattedTime(seconds: elapsedSeconds)). Puntuación: \(r.puntuacion)"
-      
-      let alert = UIAlertController(title: "¡Game Over!", message: mensaje, preferredStyle: .alert)
-      
-      // Opción para reiniciar sin guardar
-      alert.addAction(UIAlertAction(title: "Reiniciar", style: .destructive, handler: { _ in
-         self.restartGame()
-      }))
-      
-      present(alert, animated: true, completion: nil)
-   }
+        }
+        collectionView.reloadData()
+        
+        // Calcular y mostrar puntuación
+        r.puntuacion = calcularPuntuacion()
+        r.puntuacion = max(r.puntuacion, 1)
+        let mensaje = "Has pisado una mina. Tiempo: \(formattedTime(seconds: elapsedSeconds)). Puntuación: \(r.puntuacion)"
+        
+        let alert = UIAlertController(title: "¡Game Over!", message: mensaje, preferredStyle: .alert)
+        
+        // Si la puntuación es mayor a 5, se muestra la opción de guardar
+        if r.puntuacion > 5 {
+            alert.addAction(UIAlertAction(title: "Guardar Puntuación", style: .default, handler: { _ in
+                self.promptForName()
+            }))
+        }
+        
+        // Opción para reiniciar sin guardar
+        alert.addAction(UIAlertAction(title: "Reiniciar", style: .destructive, handler: { _ in
+            self.restartGame()
+        }))
+        
+        present(alert, animated: true, completion: nil)
+    }
+
    
     private func showVictory() {
         timer?.invalidate()

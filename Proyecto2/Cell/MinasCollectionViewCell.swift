@@ -37,7 +37,7 @@ class MinasCollectionViewCell: UICollectionViewCell {
                 label.text = cellData.adjacentMines > 0 ? "\(cellData.adjacentMines)" : ""
             }
         } else {
-            contentView.backgroundColor = .green
+            contentView.backgroundColor = .gray
            label.text = cellData.isFlagged ? "🚩" : ""
         }
     }
